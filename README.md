@@ -19,7 +19,8 @@ $ bash filtro-requisicao.sh $REQ
 
 - Arquivo: monitoracao-servidor.sh
 - Pré-requisito: 
-    - sudo apt-get install apache2 curl
+    - sudo apt-get install apache2 curl ssmtp mailutils
     - arquivo /var/www/html/index.html
     - sudo service apache2 start index.html 
-- Monitorar servidor, caso encontre problemas reiniciar e enviar e-mail
+    - configurar o arquivo /etc/ssmtp/ssmtp.conf
+- Monitorar servidor, caso encontre problemas reinicia o servidor Apache e enviar e-mail
