@@ -12,7 +12,7 @@ $ bash filtrando-resultado-apache.sh $IP
 - Arquivo: filtro-requisicao.sh
 - Curso Alura
 - Realiza um filtro no arquivo, considerando os seguintes parâmetros (GET, POST, PUT e DELETE).
-- *considera letras maiusculuas e minusculas no parâmetros, valida se parâmetro não foi preenchido.
+- *considera letras maiúsculuas e minúsculas nos parâmetros e valida se o parâmetro não foi preenchido.
 ```
 $ bash filtro-requisicao.sh $REQ
 ```
