@@ -1,4 +1,5 @@
-# Códigos Shell
+# Códigos Shell Script
+Repositório com códigos Shell Script
 
 - Curso Alura
 - Arquivo filtrando-resultado-apache.sh
