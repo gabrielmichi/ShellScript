@@ -14,5 +14,5 @@ $ bash filtrando-resultado-apache.sh $IP
 - Realiza um filtro no arquivo, considerando os seguintes parâmetros (GET, POST, PUT e DELETE).
 - *considera letras maiusculuas e minusculas no parâmetros, valida se parâmetro não foi preenchido.
 ```
-$ bash filtro-requisicao.sh parametro $REQ
+$ bash filtro-requisicao.sh $REQ
 ```
