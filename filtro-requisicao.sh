@@ -2,8 +2,8 @@
 
 cd ~/apache-log
 
+#Uma opção seria fazer várias condições com if/else
 :'
-Uma opção seria fazer várias condições com if/else
 if [ $1 == "GET" ]
 then
     cat apache.log | grep GET
