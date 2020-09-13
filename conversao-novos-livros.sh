@@ -18,6 +18,8 @@ varrer_diretorio(){
         then
             varrer_diretorio $caminho_arquivo
         else
+            #conversao jpg para png
+            #se nao for um diretorio/imagem, invoca imagem
             converte_imagem $caminho_arquivo
         fi
     done
