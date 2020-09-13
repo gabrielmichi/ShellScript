@@ -21,5 +21,5 @@ $ bash filtro-requisicao.sh $REQ
 - Pré-requisito: 
     - sudo apt-get install apache2 curl
     - arquivo /var/www/html/index.html
-    - sudo service apache2 start arquivo 
+    - sudo service apache2 start index.html 
 - Monitorar servidor, caso encontre problemas reiniciar e enviar e-mail
