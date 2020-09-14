@@ -1,6 +1,6 @@
 # Códigos Shell Script
-Repositório com os códigos Shell Script que eu estou desenvolvendo.
-Estou realizando alguns cursos de Shell Script na Alura e na Udemy, grande parte destes scripts, posso ter realizado nestes cursos.
+Repositório com os códigos Shell Script que eu estou desenvolvendo. <br />
+A base destes scripts eu realizei nos cursos de Shell script da Alura e Udemy.
 
 ### Arquivo: filtrando-resultado-apache.sh
 - Pré-requisito: arquivo apache.log
