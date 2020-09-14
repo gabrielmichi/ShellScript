@@ -1,7 +1,8 @@
 # Códigos Shell Script
-Repositório com códigos Shell Script
+Repositório com os códigos Shell Script que eu estou desenvolvendo.
+Estou realizando alguns cursos de Shell Script na Alura e na Udemy, grande parte destes scripts, posso ter realizado nestes cursos.
 
-- Arquivo: filtrando-resultado-apache.sh
+### Arquivo: filtrando-resultado-apache.sh
 - Pré-requisito: arquivo apache.log
 - Parâmetro de entrada: IP
 - Realiza um filtro no arquivo apache-log baseado no endereço do IP informado.
@@ -9,7 +10,7 @@ Repositório com códigos Shell Script
 $ bash filtrando-resultado-apache.sh $IP
 ```
 
-- Arquivo: filtro-requisicao.sh
+### Arquivo: filtro-requisicao.sh
 - Pré-requisito: arquivo apache.log
 - Realiza um filtro no arquivo, considerando os seguintes parâmetros (GET, POST, PUT e DELETE).
 - *considera letras maiúsculuas e minúsculas nos parâmetros e valida se o parâmetro não foi preenchido.
@@ -17,7 +18,7 @@ $ bash filtrando-resultado-apache.sh $IP
 $ bash filtro-requisicao.sh $REQ
 ```
 
-- Arquivo: monitoracao-servidor.sh
+### Arquivo: monitoracao-servidor.sh
 - Pré-requisito: 
     - sudo apt-get install apache2 curl ssmtp mailutils
     - arquivo /var/www/html/index.html
