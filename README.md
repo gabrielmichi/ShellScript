@@ -25,3 +25,6 @@ $ bash filtro-requisicao.sh $REQ
     - sudo service apache2 start index.html 
     - configurar o arquivo /etc/ssmtp/ssmtp.conf
 - Monitorar servidor, caso encontre problemas reinicia o servidor Apache e enviar e-mail
+
+### verificacao-memoria-consumida.sh
+- Monitorar consumo de memória do sistema, caso a memória consumida ultrapasse os 50% envia um e-mail para o admin
