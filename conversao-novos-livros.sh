@@ -2,14 +2,16 @@
 
 converte_imagem(){
     local caminho_imagem=$1
-    local imagem_sem_extensao=$(ls $caminho_imagem | awk -F . ' {print $1}' )
+    local imagem_sem_extensao=$(ls $caminho_imagem | awk -F. ' {print $1}' )
     convert $imagem_sem_extensao.jpg $imagem_sem_extensao.png
 }
+
 
 #Funcao varrer_diretorio
 varrer_diretorio(){
     $1 #pegar o primeiro parametro
     cd ~/Downloads/imagens-novos-livros
+    # faz varredura em todo o conteudo *
     for arquivo in *
     do
         #faz uma busca pela variavel arquivo
