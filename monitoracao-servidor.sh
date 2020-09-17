@@ -2,7 +2,7 @@
 
 resposta_http=$(curl --write-out %{http_code} --silent --output /dev/null http://localhost)
 
-:'
+: '
 if [ $resposta_http -eq 200 ]
 then
     echo "Tudo esta ok com o servidor"
@@ -22,7 +22,7 @@ del
     systemctl restart apache2
 fi
 
-:'
+: '
 Configurar para realizar o monitoramento diario (crontab -e)
 Exemplo:
 */2 * * * * /home/gmichi/Scripts/monitoracao-servidor.sh

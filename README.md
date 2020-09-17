@@ -30,25 +30,26 @@ $ bash filtro-requisicao.sh $REQ
 - Monitorar consumo de memória do sistema, caso a memória consumida ultrapasse os 50% envia um e-mail para o admin
 
 ### Arquivo: backup-dados-mysql.sh
+- Realizar backup das informações de um usuário e restauras esses dados de backup, caso sejam perdidos.
 - Pré-requisitos:
-    - sudo apt-get install mysql-server -y
+```
+    - $ sudo apt-get install mysql-server -y
     - executar comandos: instalando_mysql.sql
     - executar arquivo: mutillidae.sql
     - executar o script sh como root
-- Realizar backup das informações de um usuário e restauras esses dados de backup, caso sejam perdidos.
+```
 
 ### Arquivo: backup-amazon.sh
-    - Pré-requisitos:
-        - Criar bucket "curso-shell-script"
-        - Criar IAM -> Users -> Nome (criar_seu_nome_usuario) -> Programmatic Access -> Attach existing policies directly -> s3     (AmazonS3FullAccess)
-        - pip install awscli
-        - sudo apt install awscli
-        - aws configure (configurar: Chave de acesso/key)
-        - Permissao: chmod +x backup-amazon.sh
-        - sudo crontab -e
-        - 14 10 * * * /home/gmichi/Scripts/backup-amazon.sh
-    - Realizar backup das tabelas do banco de dados e enviar para um bucket (s3)
+- Realizar backup das tabelas do banco de dados e enviar para um bucket (s3)
+- Pré-requisitos:
+    - Criar bucket "curso-shell-script" e User (IAM)
+```
+$ sudo apt install awscli
+$ chmod +x backup-amazon.sh
+```
 
-### restore_amazon.sh
-    - Voltar o restore para banco de dados mysql, pegando de um bucket (s3)
-    bash restore_amazon.sh produtos
+### Arquivo: restore_amazon.sh
+- Voltar o restore para banco de dados mysql, pegando de um bucket (s3)
+```
+$ bash restore_amazon.sh produtos
+```
