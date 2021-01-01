@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/apache-log
+cd ~/requisitos-filtrando-resultado-apache/apache-log
 
 cat apache.log | grep $1
 
