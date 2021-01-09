@@ -1,13 +1,13 @@
 $@ = vários parâmetros
 * = pode existir qualquer caracter
-$1 = pega o primeiro parâmetro passado linha de comando
+$1 = pega o primeiro parâmetro passado na linha de comando
 
 
-#realiza o corte no ponto
-# -F é o campo delimitador
+# o parâmetro -F (-f) é o campo delimitador
 awk -F .
+cut -d : -f 1 #iremos coletar os dados antes dos ":"
 
-#pega apenas o primeiro nome "algoritmos"
+#pegar apenas o primeiro nome "algoritmos"
 ls algoritmos.jpg | awk -F . '{ print $1 }'
 ls README.txt | awk -F . '{ print $1 }'
 
@@ -34,3 +34,4 @@ fi
 
 Variaveis devem ser declaradas em letras maiúsculas.
 Sempre utilizar a variável entre chaves.
+Para imprimir o nome do programa sem o "./", devemos utilizar $(basename $0)
