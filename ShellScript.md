@@ -31,7 +31,30 @@ else
  echo "Houve uma falha"
 fi
 
-
+#Boas Práticas
 Variaveis devem ser declaradas em letras maiúsculas.
 Sempre utilizar a variável entre chaves.
 Para imprimir o nome do programa sem o "./", devemos utilizar $(basename $0)
+
+#Para debugar digite o seguinte comando
+bash -xv programa/entrada
+bash -x ./debug_1.sh -s -m #exemplo
+
+#Para habilitar o debug no código
+set -x #inicio do debug
+set +x #final do debug
+
+#Portabilidade
+#!/usr/bin/env bash
+
+#Condicional de modo curto
+[ -z "$VARIAVEL_TESTE" ] && {
+    echo "teste"
+}
+
+#Usar contrabarrar para quebrar comandos longos "\"
+#USAR EOF para atribuir textos grandes
+cat > teste.txt << EOF
+LINHA1
+LINHA2
+EOF
